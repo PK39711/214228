@@ -28,7 +28,7 @@ body {
 
 .filter {
     @include border-default();
-    @include border-radius(6px);
+    @include border-radius($default_radius);
     margin: 1rem auto;
     padding: 1rem;
     width: $block_size;
@@ -52,7 +52,8 @@ body {
 
 .product__card {
     @include border-default();
-    @include border-radius(6px);
+    @include border-radius($default_radius);
+    @include box-shadow-default();
     margin: 0 auto 1rem;
     overflow: hidden;
     width: $block_size;
